@@ -13,6 +13,8 @@ export default function SignUp(){
 
   const handleChange = (e) => {
     setFormData({
+
+      
       ...formData, [e.target.id]: e.target.value,
     })
     
@@ -22,6 +24,7 @@ export default function SignUp(){
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+
       setLoading(true);
       const res = await fetch('/api/auth/signin',{
         method:'POST',
