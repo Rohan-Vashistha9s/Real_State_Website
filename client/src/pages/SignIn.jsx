@@ -16,7 +16,7 @@ export default function SignUp(){
       ...formData, [e.target.id]: e.target.value,
     })
     
-    
+  
     
 
   }
